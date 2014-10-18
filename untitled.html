@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>Air force </title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body>
+<div id='header'>
+	header
+</div>
+<div id='main'>
+	<div class="nav_button">
+	
+		<div class="column__button" data-correspondingDiv="diplay_circular_no" id="cirInfo">Circular Info</div>
+		<div class="column__button" data-correspondingDiv="diplay_employee_details" id="empDet">Employee Details</div>
+		<div class="column__button" data-correspondingDiv="search_circular_no" id="searchByCir">Search By Circular No</div>
+		<div class="column__button" data-correspondingDiv="search_employee_id" id="searchByEmp">Search By Employee Id</div>
+
+	</div>
+	<br/><br/>		
+	<div id="display_show_hide">
+		
+		<div id="diplay_circular_no" class="dynamic_div">
+			<div class="data_table">
+				<div class="input_pair">
+					<div>Circular Number</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Rank</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Group</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Issue Date</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Effective Date</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Til Date</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Amount</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Service Period</div>
+					<div><input type="text"></div>
+				</div>		
+				<div>
+					<div>Type</div>
+					<div><select><option>Type</option></select></div>
+				</div>		
+			</div>	
+		</div>
+		
+		<div id="diplay_employee_details" class="dynamic_div">
+			<div class="data_table">
+				<div class="input_pair">
+					<div>First Name</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Last Name</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Service Number</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Membership Number</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Address 1</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Address 2</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Street</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>City</div>
+					<div><input type="text"></div>
+				</div>		
+				<div class="input_pair">
+					<div>State</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Pin Code</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Mobile</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Office Phone</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Residential Phone</div>
+					<div><input type="text"></div>
+				</div>		
+				<div class="input_pair">
+					<div>Email Id</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Trade</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Date of Birth</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Date of Expiry</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Date of Enrollment</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>Awards</div>
+					<div><input type="text"></div>
+				</div>	
+				<div class="input_pair">
+					<div>TN-Membership No</div>
+					<div><input type="text"></div>
+				</div>
+			</div>
+		</div>	
+		
+		<div id="search_circular_no" class="dynamic_div">
+			<div class="data_table">
+				<div class="input_pair">
+					<div>Circular Number</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Rank</div>
+					<div><select><option>1</option></select></div>
+				</div>
+				<div class="input_pair">
+					<div>Group</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Service Type</div>
+					<div><select><option>1</option></select></div>
+				</div>		
+			</div>
+		</div>	
+
+		<div id="search_employee_id" class="dynamic_div">
+			<div class="data_table">
+				<div class="input_pair">
+					<div>Service Number</div>
+					<div><input type="text"></div>
+				</div>
+				<div class="input_pair">
+					<div>Membership Number</div>
+					<div><select><option>1</option></select></div>
+				</div>
+			</div>
+		</div>				
+		
+	</div>
+</div>
+<div id='footer'><img src="images/logo.jpg"></div>
+
+<!-- /*====================================================
+PAGE CONTENT ENDS
+======================================================*/-->
+
+<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+
+/*====================================================
+GLOBAL VARIABLES
+======================================================*/
+// var domain                    = "http://www.afpms.com/";
+var domain                    = "localhost";
+var afpmsFolder               = "afpms";
+var afpmsFolderPath           = afpmsFolder+"/";
+var moduleBackendFolder       = "backend";
+var moduleBackendFolderPath   = afpmsFolderPath+moduleBackendFolder+"/";
+var moduleFrontendFolder      = "frontend";
+var moduleFrontendFolderPath  = afpmsFolderPath+moduleFrontendFolder+"/";
+
+/*====================================================
+FUNCTION DEFINATIONS
+======================================================*/
+function handle_callerBtn(divToHanlde) {
+	if(divToHanlde == "diplay_circular_no" || divToHanlde == "diplay_employee_details") {
+
+	}
+	else if(divToHanlde == "search_circular_no" || divToHanlde == "search_employee_id") {
+		
+	}
+	else {
+		// exception. fail silently with dev warning
+	}
+}
+
+/*
+
+|~\ _  _    _ _  _  _ _|_  |  _  _  _| _  _|
+|_/(_)(_|_|| | |(/_| | |   |_(_)(_|(_|(/_(_|
+																								 
+*/
+$(document).ready(function() {
+	// select tag
+	$(".column__button").click(function() {
+		var divToShow = $(this).attr("data-correspondingDiv");
+		console.log(divToShow);
+		$(".dynamic_div").fadeOut(100);
+		$("#"+divToShow).fadeIn("fast");
+
+		handle_callerBtn(divToShow);
+	});
+});
+</script>
+
+</body>
+</html>

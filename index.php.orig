@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>Air force </title>
+	<link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body>
+<div id='header' style="background-color:#3190B0;line-height:75px;padding-left:15px;color:#fff">
+	<h2>Air Force Veterans Management System</h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body   {background:#fff;  width:100%; height:100%;font-family: Sans-serif;
+        background-image: url('../images/flag1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        background-color:transparent ;
+       }
+	/*#main  {background:#fff; height:100%; padding:70px 0 22px; box-sizing:border-box;}*/
+	/*#head  {background:#fff; position:absolute; width:100%; height:70px;border-bottom:1px solid #ccc;}*/
+	/*#left  {background:#fff; float:left; width:180px; height:100%; overflow:hidden;border-right:1px solid #ccc;}*/
+	/*#right {background:#fff; height:100%; overflow:hidden;}*/
+	/*#foot  {background:#fff; position:absolute; bottom:0; width:100%; height:22px;border-top:1px solid #ccc;}*/
+	
+#wrapper { margin: 10px auto 10px auto ; color: #fff}
+h2{margin:0px !important}
+.container {
+  display: table;
+  width: 100%;
+}
+.column__button {
+  display: inline;
+   padding:10px;
+   border:1px solid #aaeeaa;
+   color:#fff;
+   background-color: #070321;
+  //  background: url(img_flwr.gif);
+   // background-size: 80px 60px;
+   // background-repeat: no-repeat;
+
+	
+}
+div.dynamic_div{
+    opacity: 0.87;
+    background-color: #3190b0;
+margin-left: auto; margin-right: auto; width: 70%;  border:1px solid #ccc;padding:20px; 
+display: none;
+}
+div.nav_button{
+margin-left: auto; margin-right: auto; width: 50%;  
+}
+
+.input_pair {
+  
+}
+
+.input_pair > label {
+	display: inline-block;
+}
+.input_pair > div {
+	display: inline-block;
+}
+
+.localized_overlay {
+	vertical-align: middle;
+	z-index: 9;
+	position:fixed;
+	top : 0;
+	left : 0;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	width:100%;
+	height:100%;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.pure-menu.pure-menu-horizontal, .pure-menu.pure-menu-horizontal .pure-menu-heading {
+background: none repeat scroll 0 0 !important;
+}
+
+.pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
+    color: #777;
+}
+
+.pure-menu li a:hover, .pure-menu li a:focus {
+    background: none repeat scroll 0 0 #02274f !important;
+}
+
+.pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
+    color: #FFF !important;
+}
+.button-success {
+    background: rgb(223, 117, 20) !important; /* this is a green */
+}
+
+.input_pair  div.label {width:400px; color:red}
+
+.pure-form label {
+    margin: 0.5em 2em 0.2em !important;
+}
+
+.pure-button{margin: 20px;}
+
+.pure-form input[type="text"], .pure-form select {margin-top:10px}
+
+.label-width {
+  width:200px;
+}
+
+.phcode {
+  width: 80px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.show_records_head, .show_records_body {
+  display: block;
+  min-width: 100%;
+  text-align: center;
+
+}
+
+.show_records_head {
+  background-color: #fc3f58; 
+}
+
+.show_records_body {
+  background-color: #fff;
+  color:#555; 
+}
+
+.record_row {
+  min-width : 100%;
+}
+
+.header_cell, .record_cell {
+  display: inline-block;
+  overflow-wrap:break-work;
+  word-wrap:break-word;
+  padding:5px;
+  vertical-align: text-top;
+  min-height: 100%;
+}
+
+.header_cell {
+  
+}
+
+.record_cell {
+  
+}
+
+.header_cell:hover {
+
+}
+
+.record_cell:hover {
+  background-color: #aaa;
+  color: #000;
+}

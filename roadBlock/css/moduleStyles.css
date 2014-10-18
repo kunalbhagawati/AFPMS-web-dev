@@ -1,0 +1,487 @@
+/*========================================================
+General Styles 
+==========================================================*/
+
+.capitalize {
+	text-transform : capitalize;
+	color:#F05B5B;
+	font-size: 1.2em
+}
+
+.inline {
+	display: inline;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.important {
+	color:#F05B5B;
+	font-size: 1.2em
+}
+.important > span{
+	color:#F05B5B;
+	font-size: 1.2em
+}
+
+.note {
+	color:#3F9ED9;
+	font-size: 1.2em
+}
+
+.error {
+	background-color: #FFD6D6 !important;
+}
+
+.error:hover {
+	border-color:#F05B5B !important; 
+}
+
+.ui-datepicker {
+	position: absolute !important;
+	left:20% !important;
+}
+
+input {
+	padding-left: 10px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	border : 1px;
+	border-color: #52c38c !important;
+	border-style: solid;
+	padding-left: 10px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+}
+
+.space {
+	width:2.7%;
+}
+
+label  {
+	font-weight: bold;
+	font-size: 1.2em !important;
+}
+
+
+/*========================================================
+Outer Elements 
+==========================================================*/
+
+div#container {
+	width:78% !important;
+}
+
+div#inner-container {
+	width:100%;
+}
+
+div#heading {
+	font-color : #52c38c !important;
+	font-size: 2.5em;
+}
+
+div#div_overlay, div#div_imgOverlay {
+	background-color: #000;
+	position:fixed;
+	top : 0;
+	left : 0;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+
+	width:100%;
+	height :100%;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+
+	z-index: 10;
+}
+
+div#div_imgOverlay {
+	cursor:pointer;
+	z-index: 9;
+}
+
+
+div#div_overlay_text {
+	text-align: center;
+	color: #fff !important;
+	position: fixed;
+	top: 45%;
+	font-size: 1.5em;
+	right:15%;
+}
+
+
+/*========================================================
+Inner Elements
+==========================================================*/
+
+
+.updatedCity {
+	background-color: #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+	z-index: 2;
+}
+
+
+#input_gaq {
+	width :100%;
+	height: 10em;
+}
+
+#input_landingPage {
+	width : 50%;
+}
+
+#div_targetLocation_components {
+	width:100%;
+}
+
+.div_targetLocation_component {
+	width:30%;
+	display:inline-block;
+}
+
+.div_label_targetLocation {
+	margin: 0 1px;
+	display:inline;
+}
+
+input.input_targetLocation {
+    margin: 0 1px;
+	margin-left: 2.5% !important;
+	display:inline;
+}
+
+#div_targetLocation_info {
+	/*display: none;*/
+	padding-top: 1%;
+}
+
+#div_targetLocation_fetchedCities, #div_targetLocation_selectedCities {
+	display: none;
+	background-color: #eee;
+    float: left;
+    padding: 10px;
+    margin-bottom : 15px;
+    width: 97%;
+}
+
+.div_targetLocation_fetchedCities_cols {
+    margin: 5px;
+    width: 23%;
+    float:left;
+    max-height: 500px;
+    overflow-y: hidden;	    
+}
+
+.div_targetLocation_fetchedCities_cols:hover {
+    overflow-y: auto;	
+}
+
+
+/*--- Records Table Styles --- */
+
+#div_prevRecords_pagination {
+	display:block;
+	margin : 10px;
+	overflow : hidden;
+}
+
+#div_prevRecords_container {
+	display: none;
+	width : 100%;
+}
+
+#prevRecords_searchResult {
+	display : none;
+	background-color: #F9F6D3;
+	padding : 3px;
+	text-align: center;
+}
+#prevRecords_searchResult > span {
+	font-size : 2em;
+	display: inline-block;
+	margin: 10px;
+}
+
+#prevRecords_searchResult_result {
+	text-align: center;
+}
+
+#prevRecords_searchResult_result > span {
+	font-size : 2em;
+	display: inline-block;
+	margin: 10px;
+}
+
+.prevRecords_body, .prevRecords_head, #prevRecords_searchResult {
+	width : 100%;
+	margin: 10px;
+
+}
+
+.prevRecords_head {
+	background-color: #3f9ed9;
+	display: table;
+	font-weight: bolder;
+}
+
+#prevRecords_searchResult_result > div {
+	background-color: #f9f6d3 !important;
+}
+
+
+.head_block {
+	height:100%;
+	color: #FFF !important;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	margin: 3px;
+	padding: 10px;
+	border-color: #eee;
+}
+
+
+.record_rootBlock {
+	font-weight: bold;
+	width:100%;
+	display: table;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+.record_rootBlock:hover {
+	font-weight: bolder;
+	background-color: #FAF8E5;
+}
+
+.record_block {
+	height:100%;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	margin: 3px;
+	padding: 7px 12px;
+	border-right: 2px solid #fff;
+}
+
+.record_block:hover {
+	background-color:#F7F2C1;
+}
+
+.record_block[data-celltype="image"] {
+	cursor: pointer;
+}
+
+.record_block[data-celltype="uploadedTime"], .head_block[data-coltype="updateTime"] {
+	width:8%;
+	/*max-width:8%;*/
+}
+.record_block[data-celltype="image"], .head_block[data-coltype="image"] {
+	width: 13%;
+}
+.record_block[data-celltype="image"] > img {
+	width: 100%;
+}
+
+
+.record_block[data-celltype="city"], .head_block[data-coltype="city"] {
+	width:13%; 	
+}
+
+.record_block[data-celltype="landingPageURL"], .head_block[data-coltype="landingPageURL"] {
+	width:13%; 	
+}
+
+.record_block[data-celltype="GASkipText"], .head_block[data-coltype="GASkipText"] {
+	width:14%; 
+}
+
+.record_block[data-celltype="startDate"], .head_block[data-coltype="startDate"] {
+	width:10%; 
+}
+
+.record_block[data-celltype="expireDate"], .head_block[data-coltype="expireDate"] {
+	width:10%; 
+}
+
+.record_block[data-celltype="editButton"] {
+	width:8%; 
+}
+
+.record_block[data-celltype="changeStatusButton"] {
+	max-width:8%;
+
+}
+
+.head_block[data-coltype="searchCity"] {
+	width : 8%;
+}
+
+.head_block[data-coltype="searchCity"] > label {
+	color: #fff;
+	display: inline;
+}
+
+.head_block[data-coltype="searchCity"] > input {
+	display: inline;
+}
+
+.record_row {
+	margin : 3px;
+}
+
+
+/*--- Buttons --- */
+
+.selected {
+	width : auto;
+	padding :4px 10px;
+	margin:5px 10px;
+	/*background-color: #9ACDE9;*/
+	font-weight: bold;
+	background-color: #52C38C;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+	border-radius:2px;
+}
+
+.selected span {
+	color: inherit;
+
+}
+
+.cityButton, .clearButton{
+	width : auto;
+	font-weight: bold;
+	display: block;
+	clear:both;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+	cursor:pointer;
+	border-radius:2px;
+}
+
+.cityButton {
+	margin: 2px 0px; 
+	padding : 3px 6px;
+	float:left;
+	background-color: #888;
+	color: #ffffff;
+}
+
+.cityButton:hover{
+	background-color: #3f9ed9;
+}
+
+.cityButton:active{
+	background-color: #52c38c;
+}
+
+.clearButton {
+	margin: 2px 0px; 
+	padding : 3px 6px;
+	background-color: #52c38c;
+	color: #ffffff;
+}
+
+.clearButton:hover {
+	background-color: #409D6F;
+}
+
+.clearButton:active{
+	background-color: #52c38c;
+}
+
+
+.closeButton {
+	padding: 2px 0 0 9px;
+	display: inline;
+	color: #fff;
+	cursor: pointer;
+}
+
+.button[data-status="0"] {
+	background: #E47474 !important;
+	border-color: #be4e3b !important;
+	border-style: outset !important; 
+}
+
+.button[data-status="0"]:hover {
+	border-color: #E47474 !important; 
+}
+
+div[data-cellType="editButton"] > input {
+	background: #3f9ed9 !important;
+	border-color: #3b9ad5 !important;
+	border-style: outset !important; 
+}
+
+div[data-cellType="editButton"] > input:hover {
+	border-color: #3f9ed9 !important;
+}
+
+#buttonResetRecords {
+	background-color: #52c38c;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 4px 10px;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	float:left;
+	cursor: pointer;
+}
+
+#buttonResetRecords:hover {
+	background-color: #409D6F;
+}
+
+#pageNums {
+	float:right;
+}
+
+#pageNums > div {
+	font-size: 1.3em;
+	display: inline-block;
+	padding : 3px;
+	border: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+
+/*--- Labels ---*/
+
+label {
+	padding-right :.6%;
+}
+
+label.outer {
+
+}
+
+label.inner {
+
+}
+
+label[for="div_targetLocation_components"] {
+	display : inline-block;
+	margin-bottom: .5%;
+}
