@@ -12,8 +12,7 @@
  * 		Probably not good code since i'm new to PDO but still better than using mysqli
  */
 
-// ini_set("display_errors", "1"); error_reporting(E_ALL);
-
+ini_set("display_errors", "1"); error_reporting(E_ALL);
 
 // get POST values
 $circularNo = $_POST['circularNo'];
@@ -70,15 +69,15 @@ try
 
 	$sendArr = array();
 	foreach($resultsArr as $rowNo => $row) {
-		$row['first_name'] = (!empty($row['first_name']) ? $row['first_name'] : array(0));
-		$row['last_name'] = (!empty($row['last_name']) ? $row['last_name'] : array(0));
-		$row['service_no'] = (!empty($row['service_no']) ? $row['service_no'] : array(0));
-		$row['membership_no'] = (!empty($row['membership_no']) ? $row['membership_no'] : array(0));
-		$row['email'] = (!empty($row['email']) ? $row['email'] : array(0));
-		$row['amount'] = (!empty($row['amount']) ? $row['amount'] : array(0));
-		$row['rank'] = (!empty($row['rank']) ? $row['rank'] : array(0));
-		$row['group'] = (!empty($row['group']) ? $row['group'] : array(0));
-		$row['service_type'] = (!empty($row['service_type']) ? $row['service_type'] : array(0));
+		$row['first_name'] = (!empty($row['first_name']) ? $row['first_name'] : '');
+		$row['last_name'] = (!empty($row['last_name']) ? $row['last_name'] : '');
+		$row['service_no'] = (!empty($row['service_no']) ? $row['service_no'] : '');
+		$row['membership_no'] = (!empty($row['membership_no']) ? $row['membership_no'] : '');
+		$row['email'] = (!empty($row['email']) ? $row['email'] : '');
+		$row['amount'] = (!empty($row['amount']) ? $row['amount'] : '');
+		$row['rank'] = (!empty($row['rank']) ? $row['rank'] : '');
+		$row['group'] = (!empty($row['group']) ? $row['group'] : '');
+		$row['service_type'] = (!empty($row['service_type']) ? $row['service_type'] : '');
 
 		$sendArr[] = array(
 		'first_name' => $row['first_name'],
