@@ -31,6 +31,9 @@ try{
 	}
 
 	echo json_encode(array('ranks'=>$ranks, 'groups'=>$groups));
+	
+	$DBH = null;
+	
 	exit;
 }
 catch(PDOException $errObj) {
