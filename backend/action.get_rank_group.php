@@ -8,6 +8,8 @@
  * 		Original file in mysqli, converted to PDO/mysql (Data Objects).
  * 		Probably not good code since i'm new to PDO but still better than using mysqli
  */
+ini_set("display_errors", "1"); error_reporting(E_ALL);
+
 require_once "vars/dbvars.php";
 
 try{
@@ -18,13 +20,13 @@ try{
 
 	$ranks = array();
 	$qGetRank = $DBH->query("SELECT rank_id, rank from afpms.afpms_circular_rank_info");
-	while($row = $qGetRank->fetch(FETCH_ASSOC)) {
+	while($row = $qGetRank->fetch(PDO::FETCH_ASSOC)) {
 		$ranks[$row['rank_id']] = $row['rank'];
 	}
 
 	$groups = array();
 	$qGetGroup = $DBH->query("SELECT group_id, group_name from afpms.afpms_circular_group_info");
-	while($row = $qGetGroup->fetch(FETCH_ASSOC)) {
+	while($row = $qGetGroup->fetch(PDO::FETCH_ASSOC)) {
 		$groups[$row['group_id']] = $row['group_name'];
 	}
 
