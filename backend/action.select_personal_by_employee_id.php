@@ -74,7 +74,7 @@ try {
 		);
 	}
 
-echo json_encode(array('status' => 1, 'details'=> $sendArr));	
+	echo json_encode(array('status' => 1, 'details'=> $sendArr));	
 }
 catch(Exception $error)
 {
