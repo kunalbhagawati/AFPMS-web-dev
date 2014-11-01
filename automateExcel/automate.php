@@ -52,7 +52,7 @@ $inputFileName = $miscFilesFolderPath."data_for_Tamilnadu_and_Pondicherry.xlsx";
 $inputFileType = PHPExcel_IOFactory::identify($inputFileName); 		// Identify the type of $inputFileName
 $objReader = PHPExcel_IOFactory::createReader($inputFileType); 		// Create a new Reader of the type that has been identified
 
-$filterSubset = new chunkReadFilter(2,1);
+$filterSubset = new chunkReadFilter(2,1000);
 
 $objReader->setReadDataOnly(true);
 $objReader->setLoadSheetsOnly($sheetname);
