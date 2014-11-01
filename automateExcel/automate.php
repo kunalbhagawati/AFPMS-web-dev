@@ -25,28 +25,7 @@ $PHPExcelFolderPath = $vendorFilesFolderPath.$PHPExcelFolder."/";
 $sheetname = "Data for Tamilnadu and Pondiche";
 
 require_once $PHPExcelFolderPath."Classes/PHPExcel.php";
-PHPExcel_CachedObjectStorageFactory::cache_to_sqlite;
-
-/*class MyReadFilter implements PHPExcel_Reader_IReadFilter{
-	private $_startRow = 0;
-	private $_endRow = 0;
-	private $_columns = array();
-
-	public function __construct($startRow, $endRow, $columns) {
-		$this->_startRow = $startRow;
-		$this->_endRow   = $endRow;
-		$this->_columns  = $columns;
-	}
-
-	public function readCell($column, $row, $worksheetName = '') {
-		if ($row >= $this->_startRow && $row <= $this->_endRow) {
-			if (in_array($column,$this->_columns)) {
-				return true;
-			}
-		}
-		return false;
-	}
-}*/
+PHPExcel_CachedObjectStorageFactory::cache_to_phpTemp;
 
 class chunkReadFilter implements PHPExcel_Reader_IReadFilter
 {
@@ -68,7 +47,6 @@ class chunkReadFilter implements PHPExcel_Reader_IReadFilter
 	}
 }
 
-$inputFileName = './sampleData/example1.xls';
 $inputFileName = $miscFilesFolderPath."data_for_Tamilnadu_and_Pondicherry.xlsx";
 
 $inputFileType = PHPExcel_IOFactory::identify($inputFileName); 		// Identify the type of $inputFileName
