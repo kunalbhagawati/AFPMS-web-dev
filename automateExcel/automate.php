@@ -6,9 +6,9 @@
  */
 
 ini_set("display_errors", "1"); error_reporting(E_ALL);
-// ini_set('memory_limit', '-1');
+ini_set('memory_limit', '-1');
 
-
+// $DOCUMENTROOT = "/var/www/";
 $DOCUMENTROOT = $_SERVER['DOCUMENT_ROOT']."/";
 $moduleFolder = "afpms";
 $moduleFolderPath = $DOCUMENTROOT.$moduleFolder."/";
@@ -22,6 +22,7 @@ $vendorFilesFolderPath = $moduleFolderPath.$vendorFilesFolder."/";
 $PHPExcelFolder = "PHPExcel";
 $PHPExcelFolderPath = $vendorFilesFolderPath.$PHPExcelFolder."/";
 
+$sheetname = "Data for Tamilnadu and Pondiche";
 
 require_once $PHPExcelFolderPath."Classes/PHPExcel.php";
 PHPExcel_CachedObjectStorageFactory::cache_to_sqlite;
@@ -75,12 +76,14 @@ $objReader = PHPExcel_IOFactory::createReader($inputFileType); 		// Create a new
 
 $filterSubset = new chunkReadFilter(2,1);
 
-
+$objReader->setReadDataOnly(true);
+$objReader->setLoadSheetsOnly($sheetname);
 $objReader->setReadFilter($filterSubset);
 $objPHPExcel = $objReader->load($inputFileName); 					// Load $inputFileName to a PHPExcel Object
 
 $subsetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
-var_dump($subsetData);
+echo "<pre>";
+print_r($subsetData);
 
 unset($objPHPExcel);
 
